@@ -14,6 +14,15 @@ else {
 
 
 //Query Ethereum blockchain for NFT data  
+
+const GetSubString = (str) => {
+  const first4 = str.substring(0, 4);  
+  const last4 = str.substring(str.length - 4);  
+  const result = first4 + ".." + last4;
+  return result;
+} 
+
+
 async function getNftData() { 
   // const test = "https://cors-anywhere.herokuapp.com/https://nft.bueno.art/api/contract/bunqwsPH1QYnRyTK2x9SH/chain/1/metadata/30";    
   //   const test1 = await fetch(test);
