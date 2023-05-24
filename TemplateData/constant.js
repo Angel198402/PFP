@@ -1,4 +1,6 @@
+
 const contractAddress = "0xC4bA2578fa8F19e3E11cAB9268D7358Ed6b6F77a";
+const collectionAddress = "5eJHZ9cqngMmmJ222sXHEtv6PTihXEHtFLZuojqjunix";
 const tokenId = "";
 const contractABI = [
     {"inputs":[],"stateMutability":"nonpayable","type":"constructor"},
