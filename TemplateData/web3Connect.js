@@ -29,7 +29,7 @@ async function getNftData() {
   const tokens = await contract.methods.tokensOfOwner(web3.currentProvider.selectedAddress).call();
   for (let i=0; i<tokens.length; i++){
     const metadataURL = await contract.methods.tokenURI(tokens[i]).call();
-    const metadataJSON = await fetch('http://4.246.227.197:8080/'+metadataURL);
+    const metadataJSON = await fetch('https://157.230.120.53:8080/'+metadataURL);
     const metadata = await metadataJSON.json();
     const imageURL = metadata.image;
     nftData.push({
